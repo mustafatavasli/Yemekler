@@ -11,7 +11,7 @@ import SwiftUI
 struct YemeklerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Anasayfa()
         }
     }
 }

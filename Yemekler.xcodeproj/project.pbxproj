@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		D6A391152C4F92A0003C83E3 /* YemeklerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391142C4F92A0003C83E3 /* YemeklerApp.swift */; };
-		D6A391172C4F92A0003C83E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391162C4F92A0003C83E3 /* ContentView.swift */; };
+		D6A391172C4F92A0003C83E3 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391162C4F92A0003C83E3 /* Anasayfa.swift */; };
 		D6A391192C4F92A1003C83E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A391182C4F92A1003C83E3 /* Assets.xcassets */; };
 		D6A3911C2C4F92A1003C83E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A3911B2C4F92A1003C83E3 /* Preview Assets.xcassets */; };
+		D6A391232C4F939D003C83E3 /* Yemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391222C4F939D003C83E3 /* Yemekler.swift */; };
+		D6A391252C4F9427003C83E3 /* YemeklerSatir.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */; };
+		D6A391272C4F9666003C83E3 /* YemekDetay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391262C4F9666003C83E3 /* YemekDetay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6A391112C4F92A0003C83E3 /* Yemekler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yemekler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A391142C4F92A0003C83E3 /* YemeklerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemeklerApp.swift; sourceTree = "<group>"; };
-		D6A391162C4F92A0003C83E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6A391162C4F92A0003C83E3 /* Anasayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfa.swift; sourceTree = "<group>"; };
 		D6A391182C4F92A1003C83E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6A3911B2C4F92A1003C83E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6A391222C4F939D003C83E3 /* Yemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler.swift; sourceTree = "<group>"; };
+		D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemeklerSatir.swift; sourceTree = "<group>"; };
+		D6A391262C4F9666003C83E3 /* YemekDetay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				D6A391142C4F92A0003C83E3 /* YemeklerApp.swift */,
-				D6A391162C4F92A0003C83E3 /* ContentView.swift */,
+				D6A391162C4F92A0003C83E3 /* Anasayfa.swift */,
 				D6A391182C4F92A1003C83E3 /* Assets.xcassets */,
 				D6A3911A2C4F92A1003C83E3 /* Preview Content */,
+				D6A391222C4F939D003C83E3 /* Yemekler.swift */,
+				D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */,
+				D6A391262C4F9666003C83E3 /* YemekDetay.swift */,
 			);
 			path = Yemekler;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A391172C4F92A0003C83E3 /* ContentView.swift in Sources */,
+				D6A391172C4F92A0003C83E3 /* Anasayfa.swift in Sources */,
+				D6A391272C4F9666003C83E3 /* YemekDetay.swift in Sources */,
 				D6A391152C4F92A0003C83E3 /* YemeklerApp.swift in Sources */,
+				D6A391232C4F939D003C83E3 /* Yemekler.swift in Sources */,
+				D6A391252C4F9427003C83E3 /* YemeklerSatir.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
