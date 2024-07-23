@@ -14,6 +14,7 @@
 		D6A391232C4F939D003C83E3 /* Yemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391222C4F939D003C83E3 /* Yemekler.swift */; };
 		D6A391252C4F9427003C83E3 /* YemeklerSatir.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */; };
 		D6A391272C4F9666003C83E3 /* YemekDetay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391262C4F9666003C83E3 /* YemekDetay.swift */; };
+		D6F981A22C4FD2D700AC934B /* AnasayfaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F981A12C4FD2D700AC934B /* AnasayfaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D6A391222C4F939D003C83E3 /* Yemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler.swift; sourceTree = "<group>"; };
 		D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemeklerSatir.swift; sourceTree = "<group>"; };
 		D6A391262C4F9666003C83E3 /* YemekDetay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetay.swift; sourceTree = "<group>"; };
+		D6F981A12C4FD2D700AC934B /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +59,11 @@
 		D6A391132C4F92A0003C83E3 /* Yemekler */ = {
 			isa = PBXGroup;
 			children = (
+				D6F9819B2C4FD26A00AC934B /* UI */,
+				D6F9819C2C4FD26F00AC934B /* Data */,
 				D6A391142C4F92A0003C83E3 /* YemeklerApp.swift */,
-				D6A391162C4F92A0003C83E3 /* Anasayfa.swift */,
 				D6A391182C4F92A1003C83E3 /* Assets.xcassets */,
 				D6A3911A2C4F92A1003C83E3 /* Preview Content */,
-				D6A391222C4F939D003C83E3 /* Yemekler.swift */,
-				D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */,
-				D6A391262C4F9666003C83E3 /* YemekDetay.swift */,
 			);
 			path = Yemekler;
 			sourceTree = "<group>";
@@ -74,6 +74,57 @@
 				D6A3911B2C4F92A1003C83E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6F9819B2C4FD26A00AC934B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D6F981A02C4FD2CA00AC934B /* ViewModel */,
+				D6F9819F2C4FD2B200AC934B /* View */,
+				D6F9819E2C4FD29E00AC934B /* List */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D6F9819C2C4FD26F00AC934B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D6F9819D2C4FD27F00AC934B /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D6F9819D2C4FD27F00AC934B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D6A391222C4F939D003C83E3 /* Yemekler.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D6F9819E2C4FD29E00AC934B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D6F9819F2C4FD2B200AC934B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6A391162C4F92A0003C83E3 /* Anasayfa.swift */,
+				D6A391262C4F9666003C83E3 /* YemekDetay.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6F981A02C4FD2CA00AC934B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6F981A12C4FD2D700AC934B /* AnasayfaViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +199,7 @@
 			files = (
 				D6A391172C4F92A0003C83E3 /* Anasayfa.swift in Sources */,
 				D6A391272C4F9666003C83E3 /* YemekDetay.swift in Sources */,
+				D6F981A22C4FD2D700AC934B /* AnasayfaViewModel.swift in Sources */,
 				D6A391152C4F92A0003C83E3 /* YemeklerApp.swift in Sources */,
 				D6A391232C4F939D003C83E3 /* Yemekler.swift in Sources */,
 				D6A391252C4F9427003C83E3 /* YemeklerSatir.swift in Sources */,
