@@ -11,20 +11,36 @@ class AnasayfaViewModel : ObservableObject {
     
     @Published var yemeklerListesi = [Yemekler]()
     
+    let db : FMDatabase?
+    
+    init() {
+        let veritabaniYolu = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let hedefYol = URL(fileURLWithPath: veritabaniYolu).appendingPathComponent("yemekler.sqlite")
+        db = FMDatabase(path: hedefYol.path)
+    }
+    
     func yemekleriYukle() {
+        db?.open()
+        
         var liste = [Yemekler]()
-        let y1 = Yemekler(yemekID: 1, yemekResim: "thy_logo", yemekAd: "Ayran", yemekFiyat: 8)
-        let y2 = Yemekler(yemekID: 2, yemekResim: "thy_logo", yemekAd: "Baklava", yemekFiyat: 70)
-        let y3 = Yemekler(yemekID: 3, yemekResim: "thy_logo", yemekAd: "Fanta", yemekFiyat: 10)
-        let y4 = Yemekler(yemekID: 4, yemekResim: "thy_logo", yemekAd: "Kadayıf", yemekFiyat: 50)
-        let y5 = Yemekler(yemekID: 5, yemekResim: "thy_logo", yemekAd: "Köfte", yemekFiyat: 60)
-        let y6 = Yemekler(yemekID: 6, yemekResim: "thy_logo", yemekAd: "Makarna", yemekFiyat: 55)
-        liste.append(y1)
-        liste.append(y2)
-        liste.append(y3)
-        liste.append(y4)
-        liste.append(y5)
-        liste.append(y6)
-        yemeklerListesi = liste
+        do {
+           let result = try db!.executeQuery("SELECT * FROM yemekler", values: nil)
+            
+            while result.next() {
+                let yemek_id = Int(result.string(forColumn: "yemek_id"))!
+                let yemek_adi = result.string(forColumn: "yemek_adi")!
+                let yemek_resim_adi = result.string(forColumn: "yemek_resim_adi")!
+                let yemek_fiyat = Int(result.string(forColumn: "yemek_fiyat"))!
+                
+                let yemek = Yemekler(yemekID: yemek_id, yemekResim: yemek_resim_adi, yemekAd: yemek_adi, yemekFiyat: yemek_fiyat)
+                liste.append(yemek)
+            }
+            
+            yemeklerListesi = liste
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        db?.close()
     }
 }

@@ -14,6 +14,12 @@
 		D6A391232C4F939D003C83E3 /* Yemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391222C4F939D003C83E3 /* Yemekler.swift */; };
 		D6A391252C4F9427003C83E3 /* YemeklerSatir.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */; };
 		D6A391272C4F9666003C83E3 /* YemekDetay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A391262C4F9666003C83E3 /* YemekDetay.swift */; };
+		D6BA17192C58DBB900C55514 /* yemekler.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D6BA17182C58DBB900C55514 /* yemekler.sqlite */; };
+		D6BA17282C58DBEE00C55514 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA171D2C58DBED00C55514 /* FMDatabase.m */; };
+		D6BA17292C58DBEE00C55514 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA171E2C58DBED00C55514 /* FMDatabaseQueue.m */; };
+		D6BA172A2C58DBEE00C55514 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA17212C58DBEE00C55514 /* FMResultSet.m */; };
+		D6BA172B2C58DBEE00C55514 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA17232C58DBEE00C55514 /* FMDatabaseAdditions.m */; };
+		D6BA172C2C58DBEE00C55514 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA17252C58DBEE00C55514 /* FMDatabasePool.m */; };
 		D6F981A22C4FD2D700AC934B /* AnasayfaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F981A12C4FD2D700AC934B /* AnasayfaViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +32,20 @@
 		D6A391222C4F939D003C83E3 /* Yemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler.swift; sourceTree = "<group>"; };
 		D6A391242C4F9427003C83E3 /* YemeklerSatir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemeklerSatir.swift; sourceTree = "<group>"; };
 		D6A391262C4F9666003C83E3 /* YemekDetay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetay.swift; sourceTree = "<group>"; };
+		D6BA17182C58DBB900C55514 /* yemekler.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = yemekler.sqlite; sourceTree = "<group>"; };
+		D6BA171B2C58DBD100C55514 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D6BA171C2C58DBED00C55514 /* Yemekler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yemekler-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6BA171D2C58DBED00C55514 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		D6BA171E2C58DBED00C55514 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		D6BA171F2C58DBED00C55514 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		D6BA17202C58DBEE00C55514 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		D6BA17212C58DBEE00C55514 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		D6BA17222C58DBEE00C55514 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		D6BA17232C58DBEE00C55514 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		D6BA17242C58DBEE00C55514 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D6BA17252C58DBEE00C55514 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		D6BA17262C58DBEE00C55514 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		D6BA17272C58DBEE00C55514 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		D6F981A12C4FD2D700AC934B /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +65,7 @@
 			children = (
 				D6A391132C4F92A0003C83E3 /* Yemekler */,
 				D6A391122C4F92A0003C83E3 /* Products */,
+				D6BA171A2C58DBD100C55514 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +84,20 @@
 				D6F9819C2C4FD26F00AC934B /* Data */,
 				D6A391142C4F92A0003C83E3 /* YemeklerApp.swift */,
 				D6A391182C4F92A1003C83E3 /* Assets.xcassets */,
+				D6BA17182C58DBB900C55514 /* yemekler.sqlite */,
+				D6BA17222C58DBEE00C55514 /* FMDatabase.h */,
+				D6BA171D2C58DBED00C55514 /* FMDatabase.m */,
+				D6BA17202C58DBEE00C55514 /* FMDatabaseAdditions.h */,
+				D6BA17232C58DBEE00C55514 /* FMDatabaseAdditions.m */,
+				D6BA17262C58DBEE00C55514 /* FMDatabasePool.h */,
+				D6BA17252C58DBEE00C55514 /* FMDatabasePool.m */,
+				D6BA17242C58DBEE00C55514 /* FMDatabaseQueue.h */,
+				D6BA171E2C58DBED00C55514 /* FMDatabaseQueue.m */,
+				D6BA17272C58DBEE00C55514 /* FMDB.h */,
+				D6BA171F2C58DBED00C55514 /* FMResultSet.h */,
+				D6BA17212C58DBEE00C55514 /* FMResultSet.m */,
 				D6A3911A2C4F92A1003C83E3 /* Preview Content */,
+				D6BA171C2C58DBED00C55514 /* Yemekler-Bridging-Header.h */,
 			);
 			path = Yemekler;
 			sourceTree = "<group>";
@@ -74,6 +108,14 @@
 				D6A3911B2C4F92A1003C83E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6BA171A2C58DBD100C55514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA171B2C58DBD100C55514 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D6F9819B2C4FD26A00AC934B /* UI */ = {
@@ -159,6 +201,7 @@
 				TargetAttributes = {
 					D6A391102C4F92A0003C83E3 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -185,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BA17192C58DBB900C55514 /* yemekler.sqlite in Resources */,
 				D6A3911C2C4F92A1003C83E3 /* Preview Assets.xcassets in Resources */,
 				D6A391192C4F92A1003C83E3 /* Assets.xcassets in Resources */,
 			);
@@ -198,11 +242,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A391172C4F92A0003C83E3 /* Anasayfa.swift in Sources */,
+				D6BA17292C58DBEE00C55514 /* FMDatabaseQueue.m in Sources */,
 				D6A391272C4F9666003C83E3 /* YemekDetay.swift in Sources */,
 				D6F981A22C4FD2D700AC934B /* AnasayfaViewModel.swift in Sources */,
+				D6BA17282C58DBEE00C55514 /* FMDatabase.m in Sources */,
+				D6BA172C2C58DBEE00C55514 /* FMDatabasePool.m in Sources */,
 				D6A391152C4F92A0003C83E3 /* YemeklerApp.swift in Sources */,
+				D6BA172A2C58DBEE00C55514 /* FMResultSet.m in Sources */,
 				D6A391232C4F939D003C83E3 /* Yemekler.swift in Sources */,
 				D6A391252C4F9427003C83E3 /* YemeklerSatir.swift in Sources */,
+				D6BA172B2C58DBEE00C55514 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yemekler/Preview Content\"";
@@ -351,6 +401,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mustafatavasli.Yemekler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Yemekler/Yemekler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -361,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yemekler/Preview Content\"";
@@ -379,6 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mustafatavasli.Yemekler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Yemekler/Yemekler-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

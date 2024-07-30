@@ -23,7 +23,25 @@ struct Anasayfa: View {
             }
             .navigationTitle("Yemekler")
             .onAppear {
+                veritabaniKopyala()
                 viewModel.yemekleriYukle()
+            }
+        }
+    }
+    
+    func veritabaniKopyala() {
+        let bundle = Bundle.main.path(forResource: "yemekler", ofType: ".sqlite")
+        let veritabaniYolu = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let hedefYol = URL(fileURLWithPath: veritabaniYolu).appendingPathComponent("yemekler.sqlite")
+        let fm = FileManager.default
+        
+        if fm.fileExists(atPath: hedefYol.path) {
+            print("Veritabanı Daha Önce Kopyalandı")
+        } else {
+            do {
+                try fm.copyItem(atPath: bundle!, toPath: hedefYol.path)
+            } catch {
+                print(error.localizedDescription)
             }
         }
     }
